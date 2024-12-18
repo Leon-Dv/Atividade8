@@ -6,16 +6,21 @@ public class Exercicio6 {
 
         //Gerando um número de 1 a 50
          int randomNum = (int)(Math.random() * 51);
-        /* System.out.println(randomNum);*/
+         System.out.println(randomNum);
         //Pegando a entrada de usuário
         Scanner myNum = new Scanner(System.in);
         System.out.println("Tente acertar qual número entre 1 e 50 o programa escolheu");
-        int num = myNum.nextInt();
+        int num;
 
         //Criando  o laço de repetição para que o usuário continue tentando até acertar
         do {
+
+            num = myNum.nextInt();
+
             if (num == randomNum) {
                 System.out.println("Parabéns, você acertou a resposta");
+            } else {
+                System.out.println("Você errou, tente novamente");
             }
         } while (num != randomNum); //Enquanto randomNum for diferente do meu Número
 

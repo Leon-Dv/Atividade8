@@ -10,7 +10,7 @@ public class Exercicio5 {
 
         String palavra1 = myObj.nextLine().toLowerCase().replace(" ", "");
 
-        String palavra2 = myObj.nextLine().toLowerCase().replace(" ", "");;
+        String palavra2 = myObj.nextLine().toLowerCase().replace(" ", "");
 
         //Comparando o comprimento das duas strings
         if (palavra1.length() != palavra2.length()) {
